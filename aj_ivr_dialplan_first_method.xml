@@ -1,0 +1,12 @@
+<!-- first method -->
+<!-- this file needs to place in the location as per your setup-->
+<!-- usually with source based installation of freeswitch, location will be "/usr/share/freeswitch/conf/dialplan"-->
+<!-- and with package based installation of freeswitch, location will be "/etc/freeswitch/dialplan"-->
+<context name="aj_ivr_connect">
+<extension name="ivr_connect">
+  <condition field="destination_number" expression="^1234$">
+    <action application="answer"/>
+    <action application="set" data="hangup_after_bridge=true"/>
+    <action application="lua" data="esl_ivr.lua"/>
+  </condition>
+</extension>
