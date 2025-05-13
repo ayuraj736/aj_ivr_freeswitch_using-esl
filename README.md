@@ -9,6 +9,9 @@ a: aj_esl_connect_ivr_first_method.lua
 b: aj_ivr_dialplan_first_method.xml
 
 2nd :-> There will be a xml dialplan which will connect user to freeswitch(freeswitch answers the call), then an application is being called which will go into the custom freeswitch module which I have created, which will connect to esl and generate custom events and then IVR will be played to the user and so on.
+Files for this method : 
+a: aj_esl_connect_ivr_play_second_method.c(main file of c module)
+b: aj_ivr_dialplan_second_method.xml
 
 Note: Both the files are being named differently, like first and second methods respectively, in order to get easily understand.
 Note: Will add some comments to give you a proper understanding, what I have tried to achieve.
